@@ -103,7 +103,7 @@ Sebelum data pasien dapat digunakan dalam sistem, perlu dilakukan validasi.
 
 ---
 
-### **5️⃣ DataCounter.java**
+### **5️⃣ DiagnosisCounter.java**
 Kelas ini digunakan untuk menghitung jumlah diagnosis yang telah diberikan oleh dokter.
 
 #### **Fungsi Utama**:
