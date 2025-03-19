@@ -153,21 +153,3 @@ Jika sistem dijalankan, hasilnya akan seperti ini:
 
 ✅ Terima kasih telah menggunakan layanan Clinic Dhila!
 ```
-
----
-
-## 🔧 Langkah Menjalankan Program
-1. **Pastikan Java sudah terinstall** di perangkat Anda.
-2. **Buka terminal atau command prompt** pada folder proyek.
-3. **Kompilasi seluruh file Java**:
-   ```sh
-   javac Unguided/entities/*.java ClinicDhila.java
-   ```
-4. **Jalankan program utama**:
-   ```sh
-   java ClinicDhila
-   ```
-
----
-
-🚀 **Dikembangkan oleh Habibah Ratna Fadhila Islami Hana | Telkom University Purwokerto**
