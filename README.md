@@ -136,6 +136,4 @@ Fungsi yang tersedia:
 ## 📤 Contoh Output Program
 Jika sistem dijalankan, hasilnya akan seperti berikut:
 
-```
 ![Image](https://github.com/user-attachments/assets/07fd91dc-1b28-4bd8-81de-552e2a960dd6)
-```
