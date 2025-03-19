@@ -1,19 +1,18 @@
 # <h1 align="center">🏥 Clinic Dhila Management System 🚑</h1>
 <p align="center">Habibah Ratna Fadhila Islami Hana</p>
-<p align="center">Telkom University Purwokerto</p>
+<p align="center">2311110038</p>
 
 ---
 
 ## 📣 Deskripsi Program
-Clinic Dhila Management System adalah sebuah aplikasi berbasis **Java OOP** yang digunakan untuk mengatur data **dokter, pasien, serta jadwal janji temu** di klinik.  
-Dengan menerapkan prinsip **Encapsulation, Class Relationships, dan Packages**, sistem ini lebih aman, mudah dikelola, dan bisa diperluas fungsinya di masa depan.
+Clinic Dhila Management System adalah sebuah aplikasi berbasis **Java OOP** yang menerapkan prinsip **Encapsulation, Class Relationships, dan Packages**. Sistem ini digunakan untuk mengatur data **dokter, pasien, serta jadwal janji temu** di klinik.  
 
 ### 🎯 Tujuan Pengembangan Sistem:
 <pre>
 ✔️ Menyimpan data dokter beserta bidang spesialisasinya.
 ✔️ Mengelola informasi pasien, seperti nama, usia, dan diagnosis penyakit.
 ✔️ Memfasilitasi pembuatan janji temu antara dokter dan pasien.
-✔️ Memastikan keakuratan data pasien dengan validasi sebelum disimpan.
+✔️ Memastikan keakuratan data pasien dengan validasi sebelum diproses.
 ✔️ Menghitung total diagnosis yang telah dicatat dalam sistem.
 </pre>
 
@@ -24,20 +23,31 @@ Dengan menerapkan prinsip **Encapsulation, Class Relationships, dan Packages**, 
 clinic-oop-dhila/
 └── src/
     ├── Guided/
+    │   ├── Driver/
+    │   │   ├── TestPackage.java
+    │   ├── Harga/
+    │   │   ├── KelasHarga.java
+    │   ├── Modul_4/
+    │   │   ├── Animal.java
+    │   │   ├── Cat.java
+    │   │   ├── DriverLB.java
+    │   │   ├── LibraryBook.java
+    │   ├── Token/
+    │   │   ├── KelasToken.java
     ├── Unguided/
     │   ├── entities/
     │   │   ├── Doctor.java
     │   │   ├── Patient.java
     │   │   ├── Appointment.java
     │   │   ├── DataChecker.java
-    │   │   ├── DataCounter.java
+    │   │   ├── DiagnosisCounter.java
     ├── ClinicDhila.java  # Main class (program utama)
-└── README.md  (Dokumentasi proyek)
+└── README.md  
 ```
 
 ---
 
-## 📌 Penjelasan Kelas
+## 📌 Deskripsi Kelas
 
 ### **1️⃣ Doctor.java**
 Kelas ini digunakan untuk menyimpan informasi mengenai dokter yang bekerja di klinik.
@@ -89,12 +99,12 @@ Sebelum data pasien dapat digunakan dalam sistem, perlu dilakukan validasi.
 
 #### **Fungsi Validasi**:
 - `isValidName(String name)`: Memeriksa apakah nama pasien berisi karakter huruf dan tidak kosong.
-- `isValidAge(int age)`: Memastikan usia pasien berada dalam rentang 1 hingga 119 tahun.
+- `isValidAge(int age)`: Memastikan usia pasien berada dalam rentang 1 hingga 199 tahun.
 
 ---
 
 ### **5️⃣ DataCounter.java**
-Kelas ini digunakan untuk melacak jumlah diagnosis yang telah diberikan oleh dokter.
+Kelas ini digunakan untuk menghitung jumlah diagnosis yang telah diberikan oleh dokter.
 
 #### **Fungsi Utama**:
 - `incrementDiagnosisCount()`: Menambah jumlah diagnosis yang tercatat.
@@ -103,9 +113,9 @@ Kelas ini digunakan untuk melacak jumlah diagnosis yang telah diberikan oleh dok
 ---
 
 ### **6️⃣ ClinicDhila.java (Kelas Utama)**
-Kelas ini merupakan titik awal dari program yang mengatur jalannya sistem.
+Kelas ini merupakan `main class` dari program yang mengatur jalannya sistem klinik.
 
-Fitur yang tersedia:
+Fungsi yang tersedia:
 <pre>
 ✔️ Menyusun daftar dokter dan pasien.
 ✔️ Memvalidasi data pasien sebelum diproses.
@@ -115,41 +125,17 @@ Fitur yang tersedia:
 
 ---
 
-## 🛠️ Cara Kerja Program
+## 🛠️ Cara Kerja Sistem
 1. **Sistem membuat daftar dokter dan pasien.**
-2. **Sebelum data pasien diproses, sistem memeriksa validitas nama dan usia.**
+2. **Sebelum data pasien diproses, sistem memeriksa validitas nama dan usia menggunakan class `DataChecker`.**
 3. **Jika data valid, janji temu dibuat dan jumlah diagnosis diperbarui.**
 4. **Informasi mengenai dokter, pasien, dan jadwal janji temu akan ditampilkan ke layar.**
 
 ---
 
 ## 📤 Contoh Output Program
-Jika sistem dijalankan, hasilnya akan seperti ini:
+Jika sistem dijalankan, hasilnya akan seperti berikut:
 
 ```
-=================================
-         CLINIC DHILA            
-   Kesehatan Anda Prioritas Kami 
-=================================
-
-🔍 Memeriksa validitas data pasien...
-
-📌 Daftar Dokter:
-- Dr. Aiden Pradipta | Spesialis: Ophthalmologist
-- Dr. Bella Kartika | Spesialis: Pediatrician
-- Dr. Calvin Mahendra | Spesialis: Dermatologist
-
-📌 Daftar Pasien:
-- Nathaniel Rizky | Usia: 35 | Diagnosis: Katarak
-- Serena Laksmi | Usia: 28 | Diagnosis: Demam Tinggi
-- Davin Ramadhan | Usia: 22 | Diagnosis: Eksim
-
-📌 Janji Temu:
-- Dr. Aiden Pradipta dengan Nathaniel Rizky pada 2025-05-12 | Operasi Katarak
-- Dr. Bella Kartika dengan Serena Laksmi pada 2025-06-03 | Infeksi Virus
-- Dr. Calvin Mahendra dengan Davin Ramadhan pada 2025-07-18 | Dermatitis Kronis
-
-📊 Total diagnosis yang diberikan: 3
-
-✅ Terima kasih telah menggunakan layanan Clinic Dhila!
+![Image](https://github.com/user-attachments/assets/07fd91dc-1b28-4bd8-81de-552e2a960dd6)
 ```
